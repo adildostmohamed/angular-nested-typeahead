@@ -1,0 +1,25 @@
+<form [formGroup]="placesForm">
+	<mat-form-field>
+		<input
+      type="text"
+      matInput
+      placeholder="Select a location"
+      formControlName="places"
+      required
+      [matAutocomplete]="autoGroup"
+    />
+		<!-- #docregion mat-autocomplete -->
+		<mat-autocomplete
+			#autoGroup="matAutocomplete"
+			[displayWith]="optionDisplay"
+			(optionSelected)="onOptionSelected($event)"
+		>
+			<mat-optgroup *ngFor="let place of placesOptions | async" [label]="place.name_en">
+				<mat-option *ngFor="let childPlace of place.children" [value]="childPlace" [disabled]="childPlace.disabled">
+					{{ childPlace.admin_level === 1 ? 'All ' + childPlace.name_en : childPlace.name_en }}
+				</mat-option>
+			</mat-optgroup>
+		</mat-autocomplete>
+		<!-- #enddocregion mat-autocomplete -->
+	</mat-form-field>
+</form>
