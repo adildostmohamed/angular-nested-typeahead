@@ -69,7 +69,7 @@ export const SUPPORTED_COUNTRIES: Country[] = [
     volume: 100000,
     supportedAdminLevel: ADMIN_LEVELS.ADMIN_LEVEL_THREE
   }
-]
+];
 
 export const COUNTRIES_DATA: Country[] = [
   {
