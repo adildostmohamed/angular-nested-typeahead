@@ -1,0 +1,17 @@
+<mat-optgroup
+  *ngFor="let place of places | async"
+  [label]="place.name_en"
+>
+  <mat-option
+    *ngFor="let childPlace of place.children"
+    [value]="childPlace"
+    [disabled]="childPlace.disabled"
+    [className]="'mat-option mat-focus-indicator ng-star-inserted region-option--' + childPlace.admin_level"
+  >
+    {{ childPlace.admin_level === 1 ? 'All ' + childPlace.name_en : childPlace.name_en }}
+  </mat-option>
+</mat-optgroup>
+
+<pre>
+  <code>{{ placesOptions | json }}</code>
+</pre>

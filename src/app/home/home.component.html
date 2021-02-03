@@ -1,22 +1,23 @@
-<mat-card>home card</mat-card>
-<app-country-select
+<mat-card>
+  <mat-card-title>Let's get you checked in</mat-card-title>
+  <app-country-select
   [supportedCountries]="supportedCountries"
   (selectedCountryChange)="onSelectedCountryChange($event)"
 ></app-country-select>
-
 <app-region-select 
-  *ngIf="countryData && countryChildren?.length > 0"
+  *ngIf="countryData?.supportedAdminLevel !== 0 && countryChildren?.length > 0"
   [places]="countryChildren"
+  [supportedAdminLevel]="countryData.supportedAdminLevel"
   (selectedRegionChange)="onSelectedRegionChange($event)"
 ></app-region-select>
 <div>
   <button
-    mat-stroked-button color="primary"
+    mat-flat-button
+    color="primary"
     (click)="onRegionBtnClick()"
-    [disabled]="!selectedRegion"
+    [disabled]="checkBtnDisabledState()"
   >
-    Primary
+    Let's go
   </button>
 </div>
-
-<!-- <a mat-raised-button routerLink="/place">Link</a> -->
+</mat-card>

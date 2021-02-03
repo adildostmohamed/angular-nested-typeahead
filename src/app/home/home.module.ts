@@ -7,10 +7,12 @@ import { HomeComponent } from './home.component';
 import { MaterialModule } from '../material/material.module';
 import { CountrySelectComponent } from './country-select/country-select.component';
 import { RegionSelectComponent } from './region-select/region-select.component';
+import { RegionSelectFlatComponent } from './region-select/region-select-flat/region-select-flat.component';
+import { RegionSelectGroupedComponent } from './region-select/region-select-grouped/region-select-grouped.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, CountrySelectComponent, RegionSelectComponent],
+  declarations: [HomeComponent, CountrySelectComponent, RegionSelectComponent, RegionSelectFlatComponent, RegionSelectGroupedComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

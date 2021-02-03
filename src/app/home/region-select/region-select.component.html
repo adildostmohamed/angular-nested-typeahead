@@ -1,11 +1,14 @@
 <form [formGroup]="placesForm">
-	<mat-form-field>
+	<p>{{ supportedAdminLevel }}</p>
+	<mat-form-field
+		appearance="outline"
+		floatLabel="never"
+	>
 		<input
       type="text"
       matInput
       placeholder="Select a location"
       formControlName="places"
-      required
       [matAutocomplete]="autoGroup"
     />
 		<!-- #docregion mat-autocomplete -->
@@ -14,12 +17,31 @@
 			[displayWith]="optionDisplay"
 			(optionSelected)="onOptionSelected($event)"
 		>
-			<mat-optgroup *ngFor="let place of placesOptions | async" [label]="place.name_en">
-				<mat-option *ngFor="let childPlace of place.children" [value]="childPlace" [disabled]="childPlace.disabled">
-					{{ childPlace.admin_level === 1 ? 'All ' + childPlace.name_en : childPlace.name_en }}
-				</mat-option>
-			</mat-optgroup>
+			<div *ngIf="supportedAdminLevel === 2 || supportedAdminLevel === 3">
+				<mat-optgroup
+					*ngFor="let place of placesOptions | async"
+					[label]="place.name_en"
+				>
+					<mat-option
+						*ngFor="let childPlace of place.children"
+						[value]="childPlace"
+						[disabled]="childPlace.disabled"
+						[className]="'mat-option mat-focus-indicator ng-star-inserted region-option--' + childPlace.admin_level"
+					>
+						{{ childPlace.admin_level === 1 ? 'All ' + childPlace.name_en : childPlace.name_en }}
+					</mat-option>
+				</mat-optgroup>
+			</div>
+			<div *ngIf="supportedAdminLevel === 1">
+					<mat-option
+						*ngFor="let place of placesOptions | async"
+						[value]="place"
+						[disabled]="place.disabled"
+						[className]="'mat-option mat-focus-indicator ng-star-inserted region-option--' + place.admin_level"
+					>
+						{{ place.name_en }}
+					</mat-option>
+			</div>
 		</mat-autocomplete>
-		<!-- #enddocregion mat-autocomplete -->
 	</mat-form-field>
 </form>
