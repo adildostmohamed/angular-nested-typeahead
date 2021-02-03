@@ -21,6 +21,7 @@ export class RegionSelectComponent implements OnChanges {
   @Input() supportedAdminLevel: ADMIN_LEVELS = 1;
   @Output() selectedRegionChange: EventEmitter<any> = new EventEmitter();
   placesOptions: Observable<Place[]>;
+  hideLowVolumePlaces = false;
 
   placesForm: FormGroup = this._formBuilder.group({
     places: ''
@@ -33,6 +34,7 @@ export class RegionSelectComponent implements OnChanges {
     if (changes.places?.currentValue !== changes.places?.previousValue) {
       this._resetControl();
       this._initDropdown();
+      console.log(changes.places?.currentValue)
     }
   }
 
@@ -94,6 +96,10 @@ export class RegionSelectComponent implements OnChanges {
       return option.name_en;
     }
     return '';
+  }
+
+  onShowLowVolumeToggle(event: any) {
+    this.hideLowVolumePlaces = event.checked;
   }
 
 }

@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map, toArray, flatMap } from 'rxjs/operators';
 import { Country, Place } from '../mock-places';
+import { groupedChildSupportedAdminLevels } from '../utils';
 
 @Injectable({
   providedIn: 'root'
@@ -37,20 +38,20 @@ export class PlacesService {
           // map over any admin level 2 options
           // check if they are disabled
           // push them to the new options array
-          if (country.supportedAdminLevel === 2 || country.supportedAdminLevel === 3) {
+          if (groupedChildSupportedAdminLevels.includes(country.supportedAdminLevel)) {
             child.children.map((childPlace: Place) => {
               // tslint:disable-next-line: no-shadowed-variable
               const { name_best, name_en, admin_level, volume, id } = childPlace;
               const disabledChildPlace = child.volume < this.PLACE_VOL_THRESHOLD;
+              countryOptions.push({name_best, name_en, admin_level, volume, id, disabled: disabledChildPlace});
               if (childPlace.children?.length > 0) {
                 childPlace.children.map((grandChildPlace: Place) => {
                   // tslint:disable-next-line: no-shadowed-variable
                   const { name_best, name_en, admin_level, volume, id } = grandChildPlace;
-                  const disabledGrandChildPlace = child.volume < this.PLACE_VOL_THRESHOLD;
+                  const disabledGrandChildPlace = grandChildPlace.volume < this.PLACE_VOL_THRESHOLD;
                   return countryOptions.push({name_best, name_en, admin_level, volume, id, disabled: disabledGrandChildPlace});
                 });
               }
-              return countryOptions.push({name_best, name_en, admin_level, volume, id, disabled: disabledChildPlace});
             });
             return {...child, disabled, children: countryOptions};
           }

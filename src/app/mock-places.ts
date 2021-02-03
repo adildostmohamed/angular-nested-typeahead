@@ -96,7 +96,7 @@ export const COUNTRIES_DATA: Country[] = [
         name_en: 'Auvergne-Rhone-Alpes',
         name_best: 'Auvergne-Rhone-Alpes',
         id: 'csdc',
-        volume: 10000,
+        volume: 1,
         admin_level: ADMIN_LEVELS.ADMIN_LEVEL_ONE,
       },
       {
@@ -117,7 +117,7 @@ export const COUNTRIES_DATA: Country[] = [
         name_en: 'Centre-Val de Loire',
         name_best: 'Centre-Val de Loire',
         id: 'csdc',
-        volume: 10000,
+        volume: 1,
         admin_level: ADMIN_LEVELS.ADMIN_LEVEL_ONE,
       },
       {
@@ -159,7 +159,7 @@ export const COUNTRIES_DATA: Country[] = [
         name_en: 'Occitanie',
         name_best: 'Occitanie',
         id: 'csdc',
-        volume: 10000,
+        volume: 1,
         admin_level: ADMIN_LEVELS.ADMIN_LEVEL_ONE,
       },
       {
@@ -743,7 +743,7 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Islands',
                 name_best: 'Islands',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
@@ -771,14 +771,14 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'West Athens Regional Unit',
                 name_best: 'West Athens Regional Unit',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'West Attica Regional Unit',
                 name_best: 'West Attica Regional Unit',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
             ]
@@ -849,7 +849,7 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Arta',
                 name_best: 'Arta',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
@@ -863,14 +863,14 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Preveza',
                 name_best: 'Preveza',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Thesproita',
                 name_best: 'Thesproita',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               }
             ]
@@ -886,28 +886,28 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Florina',
                 name_best: 'Florina',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Grevena',
                 name_best: 'Grevena',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Kastoria',
                 name_best: 'Kastoria',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Kozani',
                 name_best: 'Kozani',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               }
             ]
@@ -939,35 +939,35 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Imathia',
                 name_best: 'Imathia',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Kilki',
                 name_best: 'Kilki',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Pella',
                 name_best: 'Pella',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Pieria',
                 name_best: 'Pieria',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Serres',
                 name_best: 'Serres',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
@@ -990,42 +990,42 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Drama',
                 name_best: 'Drama',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Evros',
                 name_best: 'Evros',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Kavala Prefecture',
                 name_best: 'Kavala Prefecture',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Rhodope',
                 name_best: 'Rhodope',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Thasos Regional Unit',
                 name_best: 'Thasos Regional Unit',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Xanthi',
                 name_best: 'Xanthi',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               }
             ]
@@ -1064,14 +1064,14 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Ithaki',
                 name_best: 'Ithaki',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Lefkada',
                 name_best: 'Lefkada',
                 id: 'YX123sdcfsdf456',
-                volume: 500000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
@@ -1094,35 +1094,35 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Arcadia',
                 name_best: 'Arcadia',
                 id: 'arcadia',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Argolis',
                 name_best: 'Argolis',
                 id: 'argolis',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Corinthia',
                 name_best: 'Corinthia',
                 id: 'Corinthia',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Laconia',
                 name_best: 'Laconia',
                 id: 'arcadia',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Messenia',
                 name_best: 'Messenia',
                 id: 'arcadia',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               }
             ]
@@ -1138,21 +1138,21 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Achaea',
                 name_best: 'Achaea',
                 id: 'Achaea',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Aetolia-Acarnania',
                 name_best: 'Aetolia-Acarnania',
                 id: 'Aetolia-Acarnania',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Elis',
                 name_best: 'Elis',
                 id: 'Elis',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
             ]
@@ -1177,35 +1177,35 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Chios',
                 name_best: 'Chios',
                 id: 'Chios',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Icaria',
                 name_best: 'Icaria',
                 id: 'Icaria',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Lemnos',
                 name_best: 'Lemnos',
                 id: 'Lemnos',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Lesbos Prefecture',
                 name_best: 'Lesbos Prefecture',
                 id: 'Lesbos Prefecture',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Samos Prefecture',
                 name_best: 'Samos Prefecture',
                 id: 'Samos Prefecture',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               }
             ]
@@ -1221,28 +1221,28 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Andros',
                 name_best: 'Andros',
                 id: 'Andros',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Kalymnos',
                 name_best: 'Kalymnos',
                 id: 'Kalymnos',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Karphatos',
                 name_best: 'Karphatos',
                 id: 'Karphatos',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Kea-Kythnos',
                 name_best: 'Kea-Kythnos',
                 id: 'Kea-Kythnos',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
@@ -1256,7 +1256,7 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Milos',
                 name_best: 'Milos',
                 id: 'Milos',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
@@ -1270,14 +1270,14 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Naxos',
                 name_best: 'Naxos',
                 id: 'Naxos',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Paros',
                 name_best: 'Paros',
                 id: 'Paros',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
@@ -1291,7 +1291,7 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Syros',
                 name_best: 'Syros',
                 id: 'Syros',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
@@ -1305,7 +1305,7 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Tinos Regional Unit',
                 name_best: 'Tinos Regional Unit',
                 id: 'Tinos Regional Unit',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               }
             ]
@@ -1330,35 +1330,35 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Boeotia',
                 name_best: 'Boeotia',
                 id: 'Boeotia',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Euboea',
                 name_best: 'Euboea',
                 id: 'Euboea',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Evrytania',
                 name_best: 'Evrytania',
                 id: 'Evrytania',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Phocis',
                 name_best: 'Phocis',
                 id: 'Phocis',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Phthiotis',
                 name_best: 'Phthiotis',
                 id: 'Phthiotis',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               }
             ]
@@ -1374,21 +1374,21 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Karditsa',
                 name_best: 'Karditsa',
                 id: 'Karditsa',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Larissa',
                 name_best: 'Larissa',
                 id: 'Larissa',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
                 name_en: 'Magneisa Prefecture',
                 name_best: 'Magneisa Prefecture',
                 id: 'Magneisa Prefecture',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               },
               {
@@ -1402,7 +1402,7 @@ export const COUNTRIES_DATA: Country[] = [
                 name_en: 'Trikala',
                 name_best: 'Trikala',
                 id: 'Trikala',
-                volume: 50000,
+                volume: 1,
                 admin_level: ADMIN_LEVELS.ADMIN_LEVEL_THREE
               }
             ]

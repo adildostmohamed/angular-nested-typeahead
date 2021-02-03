@@ -1,3 +1,8 @@
+<mat-slide-toggle
+	(change)="onShowLowVolumeToggle($event)"
+>
+	Hide low volume places?
+</mat-slide-toggle>
 <form [formGroup]="placesForm">
 	<mat-form-field
 		appearance="outline"
@@ -20,14 +25,16 @@
 					*ngFor="let place of placesOptions | async"
 					[label]="place.name_en"
 				>
-					<mat-option
-						*ngFor="let childPlace of place.children"
-						[value]="childPlace"
-						[disabled]="childPlace.disabled"
-						[className]="'mat-option mat-focus-indicator ng-star-inserted region-option--' + childPlace.admin_level"
-					>
-						{{ childPlace.admin_level === 1 ? 'All ' + childPlace.name_en : childPlace.name_en }}
-					</mat-option>
+					<ng-container *ngFor="let childPlace of place.children">
+						<mat-option
+							*ngIf="this.hideLowVolumePlaces ? !childPlace.disabled : true"
+							[value]="childPlace"
+							[disabled]="childPlace.disabled"
+							[className]="'mat-option mat-focus-indicator ng-star-inserted region-option--' + childPlace.admin_level"
+						>
+							{{ childPlace.admin_level === 1 ? 'All ' + childPlace.name_en : childPlace.name_en }}
+						</mat-option>
+					</ng-container>
 				</mat-optgroup>
 			</div>
 			<div *ngIf="supportedAdminLevel === 1">
