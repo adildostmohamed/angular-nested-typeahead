@@ -1,5 +1,4 @@
 <form [formGroup]="placesForm">
-	<p>{{ supportedAdminLevel }}</p>
 	<mat-form-field
 		appearance="outline"
 		floatLabel="never"
@@ -11,7 +10,6 @@
       formControlName="places"
       [matAutocomplete]="autoGroup"
     />
-		<!-- #docregion mat-autocomplete -->
 		<mat-autocomplete
 			#autoGroup="matAutocomplete"
 			[displayWith]="optionDisplay"
